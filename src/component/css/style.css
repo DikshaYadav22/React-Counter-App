@@ -1,3 +1,17 @@
+body {
+  background: #f3f2ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Jost", sans-serif;
+  font-family: "M PLUS 1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
 .box {
   width: 25w;
   height: 60vh;
@@ -8,6 +22,11 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   min-width: 20rem;
+}
+
+.inputData {
+  padding: 10px;
+  text-align: center;
 }
 
 .inputField {
@@ -31,4 +50,45 @@
   top: 120%;
   left: 50%;
   background: white;
+}
+
+.tempmin_max {
+  text-align: center;
+  margin-top: 0.3rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #57606f;
+}
+
+#weathercon {
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.info {
+  padding: 16%;
+  font-weight: bold;
+}
+
+.wave.-one {
+  margin-top: -20rem;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
 }
