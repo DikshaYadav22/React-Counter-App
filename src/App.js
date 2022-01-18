@@ -1,10 +1,14 @@
 import React, {useState} from 'react'
-import Menu from './component/Menu';
-import Counter from './component/Counter';
-import ContactForm from './component/ContactForm';
+import Tempapp from './component/Tempapp';
+// import Menu from './component/Menu';
+// import Counter from './component/Counter';
+// import ContactForm from './component/ContactForm';
 // import Practise from './component/Practise';
+// import Toggle from './component/Toggle';
+    import User from './component/User';
 
 const App = () => {
+  const [data, setData] = useState("Diksha123")
   // const [data, setData] = useState(0);
 
   // const incrementCounter = () => {
@@ -19,7 +23,10 @@ const App = () => {
 
   return(
     <div>
-        <ContactForm />
+      <Tempapp />
+      {/* <User username={data}/> */}
+          {/* <Toggle /> */}
+        {/* <ContactForm /> */}
     {/* <Practise />
 
       <Menu cartItem={data} />
