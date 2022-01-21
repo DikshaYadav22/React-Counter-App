@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import Tempapp from './component/Tempapp';
+import ContactForm from './component/ContactForm';
+// import Tempapp from './component/Tempapp';
 // import Menu from './component/Menu';
 // import Counter from './component/Counter';
 // import ContactForm from './component/ContactForm';
@@ -8,7 +9,7 @@ import Tempapp from './component/Tempapp';
     import User from './component/User';
 
 const App = () => {
-  const [data, setData] = useState("Diksha123")
+  // const [data, setData] = useState("Diksha123");
   // const [data, setData] = useState(0);
 
   // const incrementCounter = () => {
@@ -23,7 +24,8 @@ const App = () => {
 
   return(
     <div>
-      <Tempapp />
+      <ContactForm />
+      {/* <Tempapp /> */}
       {/* <User username={data}/> */}
           {/* <Toggle /> */}
         {/* <ContactForm /> */}
